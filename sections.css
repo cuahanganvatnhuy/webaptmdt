@@ -7,7 +7,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    align-items: start;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.about-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .about-text h3 {
@@ -21,6 +31,86 @@
     color: var(--text-light);
     margin-bottom: 30px;
     line-height: 1.7;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Responsive for About Section */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+    }
+    
+    .about-text p {
+        max-width: 65%;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .target-audience {
+        width: 68%;
+    }
+    
+    .problem-solution {
+        width: 65%;
+    }
+    
+    /* Mobile-specific styling for about section */
+    .mobile-about-content {
+        width: 68%;
+    }
+    
+    .mobile-about-text {
+        width: 65%;
+    }
+    
+    .mobile-about-solution {
+        width: 65%;
+    }
+    
+    .accordion-section {
+        width: 68%;
+    }
+    
+    .about-image {
+        width: 68%;
+    }
+    
+    .audience-item {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .audience-item i {
+        font-size: 1.3rem;
+        width: 25px;
+    }
+    
+    .audience-item span {
+        font-size: 1rem;
+    }
+    
+    .problem-solution .feature {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .problem-solution .feature i {
+        font-size: 1.3rem;
+        width: 25px;
+    }
+    
+    .problem-solution .feature span {
+        font-size: 1rem;
+    }
 }
 
 .target-audience,
@@ -28,6 +118,94 @@
 .platform-support,
 .service-include {
     margin-bottom: 40px;
+}
+
+.audience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.audience-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.audience-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 128, 0, 0.1);
+}
+
+.audience-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    width: 30px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.audience-item span {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    flex: 1;
+    min-width: 0;
+}
+
+.problem-solution .features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.problem-solution .feature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.problem-solution .feature:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 128, 0, 0.1);
+}
+
+.problem-solution .feature i {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    width: 30px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.problem-solution .feature span {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    flex: 1;
+    min-width: 0;
 }
 
 .target-audience h4,
