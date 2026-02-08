@@ -64,25 +64,7 @@
     }
     
     /* Mobile-specific styling for about section */
-    .mobile-about-content {
-        width: 68%;
-    }
     
-    .mobile-about-text {
-        width: 65%;
-    }
-    
-    .mobile-about-solution {
-        width: 65%;
-    }
-    
-    .accordion-section {
-        width: 68%;
-    }
-    
-    .about-image {
-        width: 68%;
-    }
     
     .audience-item {
         padding: 12px;
